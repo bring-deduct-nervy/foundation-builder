@@ -9,7 +9,7 @@ const Index = () => {
   const under20 = products.filter(p => p.price < 20);
 
   return (
-    <div className="min-h-screen bg-background pb-20 max-w-md mx-auto">
+    <div className="h-[100dvh] bg-background flex flex-col max-w-[390px] mx-auto overflow-hidden border-x border-border shadow-lg">
       <SearchBar onFilterClick={() => {}} />
       <div className="mt-2">
         <PromoBanner />
