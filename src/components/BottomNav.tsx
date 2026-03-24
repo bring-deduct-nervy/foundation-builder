@@ -19,7 +19,7 @@ const BottomNav = () => {
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border px-2 pb-2 pt-1 z-50">
+    <div className="bg-card border-t border-border px-2 pb-2 pt-1 z-50 flex-shrink-0">
       <div className="flex justify-around items-center max-w-md mx-auto">
         {tabs.map(({ icon: CustomIcon, lucideIcon: LucideIcon, label, path }) => {
           const isActive = location.pathname === path;

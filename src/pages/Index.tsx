@@ -10,21 +10,23 @@ const Index = () => {
 
   return (
     <div className="h-[100dvh] bg-background flex flex-col max-w-[390px] mx-auto overflow-hidden border-x border-border shadow-lg">
-      <SearchBar onFilterClick={() => {}} />
-      <div className="mt-2">
-        <PromoBanner />
-      </div>
-      <SectionHeader title="Best Selling" onSeeAll={() => {}} />
-      <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar">
-        {products.slice(0, 4).map(product => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
-      <SectionHeader title="Under $20" onSeeAll={() => {}} />
-      <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar pb-4">
-        {under20.map(product => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+      <div className="flex-1 overflow-y-auto hide-scrollbar">
+        <SearchBar onFilterClick={() => {}} />
+        <div className="mt-2">
+          <PromoBanner />
+        </div>
+        <SectionHeader title="Best Selling" onSeeAll={() => {}} />
+        <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar">
+          {products.slice(0, 4).map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+        <SectionHeader title="Under $20" onSeeAll={() => {}} />
+        <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar pb-4">
+          {under20.map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </div>
       <BottomNav />
     </div>
