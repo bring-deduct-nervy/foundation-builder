@@ -7,7 +7,7 @@ const Purchases = () => {
   const total = items.reduce((sum, i) => sum + i.product.price * i.quantity, 0);
 
   return (
-    <div className="min-h-screen bg-background pb-20 max-w-md mx-auto">
+    <div className="h-[100dvh] bg-background flex flex-col max-w-[390px] mx-auto overflow-hidden border-x border-border shadow-lg">
       <div className="px-4 pt-4 pb-2">
         <h1 className="text-xl font-bold text-foreground">My Cart</h1>
         <p className="text-sm text-muted-foreground">{totalItems} items</p>
