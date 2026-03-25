@@ -16,13 +16,13 @@ const Index = () => {
           <PromoBanner />
         </div>
         <SectionHeader title="Best Selling" onSeeAll={() => {}} />
-        <div className="grid grid-cols-2 gap-3 px-4">
-          {products.map(product => (
+        <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar">
+          {products.slice(0, 4).map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
         <SectionHeader title="Under $20" onSeeAll={() => {}} />
-        <div className="grid grid-cols-2 gap-3 px-4 pb-4">
+        <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar pb-4">
           {under20.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
