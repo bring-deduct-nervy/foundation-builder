@@ -13,7 +13,7 @@ const Purchases = () => {
         <p className="text-sm text-muted-foreground">{totalItems} items</p>
       </div>
 
-      <div className="flex-1 overflow-y-auto hide-scrollbar">
+      <div className="flex-1 overflow-y-auto hide-scrollbar smooth-scroll">
         {items.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-20">
             <ShoppingBag className="w-16 h-16 text-muted-foreground mb-4" />
