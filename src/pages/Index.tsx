@@ -16,8 +16,8 @@ const Index = () => {
           <PromoBanner />
         </div>
         <SectionHeader title="Best Selling" onSeeAll={() => {}} />
-        <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar">
-          {products.slice(0, 4).map(product => (
+        <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar snap-x snap-mandatory scroll-smooth">
+          {products.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
