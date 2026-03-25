@@ -124,4 +124,12 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  .smooth-scroll {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
 }
