@@ -12,7 +12,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const { addToCart } = useCart();
 
   return (
-    <div className="min-w-[160px] max-w-[180px] flex-shrink-0 snap-start">
+    <div className="w-full">
       <div
         onClick={() => navigate(`/product/${product.id}`)}
         className="bg-card rounded-2xl p-3 relative cursor-pointer"
