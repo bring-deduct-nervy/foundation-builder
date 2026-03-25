@@ -22,7 +22,7 @@ const Index = () => {
           ))}
         </div>
         <SectionHeader title="Under $20" onSeeAll={() => {}} />
-        <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar pb-4">
+        <div className="flex gap-3 px-4 overflow-x-auto hide-scrollbar snap-x snap-mandatory scroll-smooth pb-4">
           {under20.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
